@@ -1,0 +1,76 @@
+import requests
+
+### About
+### Add Token to Request
+GET http://127.0.0.1:8000/api/v1/about/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2MzM0NjMxLCJpYXQiOjE3MzM3NDI2MzEsImp0aSI6IjhmY2JhMDYzNjk5NDQ4OWM5OTU0YjVjZjlhNDkyNjM5IiwidXNlcl9pZCI6M30.ooTjhq1sBDYFEEKHZdAf5b5otPqEGiGVwFTKc7aGIVw
+
+
+
+### GetToken
+
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "user12345"
+}
+
+### GetToken
+
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+  "username": "testuser2",
+  "password": "test12345"
+}
+
+
+### RefreshToken
+
+POST http://127.0.0.1:8000/api/token/refresh/
+Content-Type: application/json
+
+{
+  "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2MjU0Mjg0LCJpYXQiOjE3MzM2NjIyODQsImp0aSI6IjdlOTk1ZjBkMDBmZjQ3Y2Y4ZWUyMmY2OTEyZjMzZWFiIiwidXNlcl9pZCI6Mn0.y15k3ES4gJnLsx5GAoeMqJcg52rk179GhF50CbaJNT0"
+}
+
+###
+POST http://127.0.0.1:8000/api/v1/ip_info/foreign/
+Content-Type: application/json
+
+{
+  "ip": "132.80.80.80"
+}
+
+
+###
+POST http://127.0.0.1:8000/api/v1/ip_info/foreign/
+Content-Type: application/json
+
+{
+  "ip": "132.80.80.80"
+}
+
+###
+
+GET http://127.0.0.1:8000/api/v1/ip_info/self/
+
+Content-Type: application/json
+
+
+###
+
+GET http://127.0.0.1:8000/api/v1/ip_info/history/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2MzM0ODM0LCJpYXQiOjE3MzM3NDI4MzQsImp0aSI6ImNkYTQxOTAzNzRiNzRiOThhNGIyYzE1MGQ4NDNiZDIyIiwidXNlcl9pZCI6M30.Ulga6UYr6CxNc6YGl2Rc9okCEqGka1ochTuynk7Erfk
+
+Content-Type: application/json
+
+
+
+
+
+
+
